@@ -1,0 +1,538 @@
+main{
+    overflow: hidden;
+}
+a{
+    text-decoration: none;
+}
+/* header */
+.header_inner{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    padding-bottom: 10px;
+    justify-content: space-between;
+}
+.header_inner_left{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+/* mv */
+#mainvisual {
+    height: 400px;
+    min-height: initial;
+    margin-bottom: 430px;
+}
+
+#mainvisual {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    height: 400px;
+    background-image: url(../image/sp/fv/SP_main.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+}
+
+/* web見積もり */
+.repair{
+    position: absolute;
+    background-color: #EFF9FB;
+    border-radius: 10px;
+    width: 330px;
+    height: 500px;
+    padding: 20px;
+    top: 136%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    z-index: 3;
+    display: block;
+}
+.repair_subcopy{
+    font-size: 18px;
+    text-align: center;
+}
+.repair_subcopy::before{
+    content: url('../image/sp/img/line①.png');
+    margin-right:12px;
+}
+.repair_subcopy::after{
+    content: url('../image/sp/img/line②.png');
+    margin-left:12px;
+}
+.repair_title{
+    font-size: 28px;
+    font-weight: bold;
+    color: #E95389;
+    text-align: center;
+}
+.repair_head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.repair_request{
+    background-color: #FAD9DF;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px;
+    margin: 10px;
+}
+.repair_counter{
+    color: #E95389;
+}
+.repair_form{
+    margin: 10px;
+    position: relative;
+    z-index: 3; 
+}
+.repair_form_label{
+    margin-top: 10px;
+}
+.repair_form_input,
+.repair_form_textarea{
+    background-color: #fff;
+    border: 1px solid #0096DC;
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 10px;
+}
+.repair_btn_inner{
+    text-align: center;
+    margin-top: 20px;
+}
+.repair_btn {
+    font-size: 18px;
+  color: #fff;
+  background-color: #E95389;
+  border-radius: 100vh;
+  padding: 10px 40px;
+  text-align: center;
+}
+.repair_btn::before{
+    content: url('../image/sp/icon/arrow.png');
+    margin-right:10px;
+}
+.repair_bg_right,
+.repair_bg_left{
+    position: absolute;
+    z-index: 1;
+}
+.repair_bg_right{
+    bottom: -47%;
+    right: -88%;
+}
+.repair_bg_left{
+    left: -36%;
+    bottom: -28%;
+}
+/* 高額請求業者にご注意 */
+.caption{
+    padding: 20px;
+    margin-bottom: 48px;
+}
+.section_title{
+    text-align: center;
+    line-height: 1.2;
+    letter-spacing: 0.1em;
+    font-size: 20px;
+}
+.pink_text_color{
+    font-weight: bold;
+    font-size: 28px;
+    color: #E95389;
+}
+.caption_text{
+    letter-spacing: 0.15em;
+    padding-top: 20px;
+    position: relative;
+    line-height: 2;
+}
+.caption_img{
+    position: absolute;
+    bottom: -25px;
+    right: -8px;
+}
+/* 料金比較表  */
+.compare_head{
+    padding: 20px;
+    text-align: center;
+}
+.compare_title{
+    font-size: 28px;
+    color: #E95389;
+    font-weight: bold;
+}
+.compare_head p{
+    padding: 20px 0;
+}
+.price_table {
+    border-collapse: collapse;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 0;
+    width: 650px;
+    table-layout: fixed;
+}
+
+.price_table tr {
+    background-color: #fff;
+    border: 1px solid #C2C2C2;
+    padding: .35em;
+}
+.price_table th,
+.price_table td {
+    padding: 1em 10px 1em 1em;
+    text-align: center;
+    border: 1px solid #C2C2C2;
+}
+.price_table th {
+    font-size: .85em;
+    background-color: #E5F9F8;
+}
+.price_table thead tr{
+    background-color: #eee;
+}
+.txt{
+    text-align: left;
+    font-size: .85em;
+}
+.price{
+    text-align: right;
+}
+.table_wrap{
+    overflow-x: scroll;
+    width: 100%;
+}
+.table_wrap::-webkit-scrollbar {
+    height: 5px;
+}
+.table_wrap::-webkit-scrollbar-track {
+    border-radius: 5px;
+    background: #eee;
+}
+.table_wrap::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: #666;
+}
+.table_blue_head{
+    border: 1px solid #0096DC !important;
+    background-color: #0096DC;
+    color:#fff;
+    font-size: 18px;
+    font-weight: bold;
+}
+.table_blue_item{
+    border: 3px solid #0096DC !important;
+    color: #0096DC;
+    font-size: 24px;
+    font-weight: bold;
+}
+.table_pink_head{
+    background-color: #FFEBEE !important;
+    border: 3px solid #E95389;
+}
+.table_pink_item{
+    background-color: #FFEBEE ;
+    border: 3px solid #0096DC !important;
+    color: #E95389;
+    font-size: 24px;
+    font-weight: bold;
+}
+.table_pink_item.sub{
+    border: 1px solid #C2C2C2 !important;
+    color: #333333;
+}
+
+/* 会社概要 */
+.company_table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+.company_table th,
+.company_table td {
+    width: 100%;
+    display: block;
+  }
+  
+.company_table th {
+    text-align: left;
+  }
+
+  .company_table td {
+    border-bottom: 1px solid #666;
+  }
+
+  /* メンテナンスの料金体系 */
+  .pricing_plan{
+    padding: 0 20px;
+    margin-bottom: 20px;
+  }
+  .pricing_plan_inner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFBDB;
+    border-radius: 10px;
+    padding: 20px 0;
+  }
+  .blue_text_color{
+    font-size: 28px;
+    color: #0096DC;
+    font-weight: bold;
+  }
+  .pricing_plan_title{
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .pricing_plan_box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .pricing_plan_box_inner{
+    width: 295px;
+    height: 160px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+  }
+  .basic_price_subcopy{
+    padding: 0 10px;
+    background-color: #FAD9DF;
+    font-size: 16px;
+  }
+  .pricing_pink{
+    font-size: 34px;
+    font-weight: bold;
+    color: #E95389;
+    margin-top: 10px;
+  }
+  .pricing_sub{
+    font-size: 30px;
+  }
+  .basic_price_text{
+    font-size: 20px;
+  }
+  .pricing_repair_subcopy{
+    font-weight: bold;
+    font-size: 30px;
+    color: #E95389;
+  }
+.pricing_repair_text{
+    font-size: 20px;
+}
+.total_price{
+    position: relative;
+}
+.sail_icon{
+    position: absolute;
+    top: -28px;
+    right: -12px;
+}
+.total_price_subcopy{
+    font-weight: bold;
+    font-size: 30px;
+    color: #E95389;
+    border-bottom: 2px dotted #FFB4C1;
+    display: inline-block;
+    margin-top: 20px;
+}
+.pricing_plan_box_icon{
+    padding: 20px;
+}
+.pricing_plan_text{
+    font-size: 18px;
+    text-align: center;
+    padding: 20px;
+}
+.pricing_plan_subText{
+    color: #E95389;
+    font-weight: bold;
+    border-bottom: 1px solid #FFEC42;
+}
+.pricing_plan_box_pay{
+    width: 295px;
+    height: 310px;
+    border: 1px solid #E95389;
+    border-radius: 10px;
+}
+.pay_title{
+    color: #fff;
+    background-color: #E95389;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 10px 10px 0 0;
+    font-size: 20px;
+}
+.pay_box{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+    row-gap: 20px;
+    background-color: #fff;
+}
+.pay_box_contents{
+    width: calc(50% - 20px);
+    text-align: center;
+}
+/* 無料メール相談 */
+.free_mail{
+    background-color: #FFEBEE;
+}
+.free_mail_inner{
+    padding: 20px;
+    padding-top: 60px;
+    position: relative;
+}
+.free_mail_topic{
+    position: absolute;
+    top: 25px;
+    left: 40px;
+    width: 295px;
+    text-align: center;
+    border: 1px solid #E95389;
+    border-radius: 10px;
+    background-color: #fff;
+}
+.free_mail_topic p{
+    padding: 5px 0;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+.free_mail_topic p::before{
+    content: url(../image/sp/icon/ios-timer.png);
+}
+.free_mail_box{
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+}
+.free_mail_head{
+    position: relative;
+    margin-top: 40px;
+}
+.free_mail_sweat{
+    position: absolute;
+    top: -20px;
+    left: -16px;
+}
+.free_mail_title{
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 1px solid #FFEC42;
+}
+.free_mail_priceBox{
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+.free_mail_priceBox_men{
+    position: absolute;
+    right: 0;
+    top: -16px;
+}
+.free_mail_textBox{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.free_mail_pinkText{
+    font-size: 32px;
+    font-weight: bold;
+    color: #E95389;
+}
+.del {
+    position: relative;
+    margin-left: 20px;
+}
+.del::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    margin-top: -4px;
+    border-bottom: solid 1px #E95389;
+    position: absolute;
+    left: 0;
+    top: 50%;
+}
+.del:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    margin-top: 2px;
+    border-top: solid 1px #E95389;
+    position: absolute;
+    left: 0;
+    top: 50%;
+}
+.free_mail_subcoopy{
+    text-align: center;
+    padding: 5px 40px;
+    background-color: #FFFBDB;
+    border-radius: 10px;
+}
+.free_mail_subcoopy_pink{
+    font-size: 16px;
+    color: #E95389;
+    font-weight: bold;
+}
+.free_mail_number{
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    justify-content: space-between;
+}
+.free_mail_btnText::before{
+    content: url(../image/sp/icon/mail.png);
+    margin-right: 10px;
+}
+a.free_mail_btnText {
+	display: block;
+	text-align: center;
+	vertical-align: middle;
+	text-decoration: none;
+	position: relative;
+    padding: 10px 0;
+    font-size: 22px;
+	font-weight: bold;
+	border-radius: 20px;
+    color: #fff;
+	background-color: #0096DC;
+	box-shadow: 5px 5px #B7DFDD;
+}
+
+/* 高額請求業者にご注意② */
+.caption_second{
+    background-color: #FFFBDB;
+    border-radius: 10px;
+}
+.caption_second_title{
+    padding: 20px;
+    padding-bottom: 0;
+}
+.caption_second_text{
+    padding: 20px;
+    padding-bottom: 45px;
+}
+.caption_second_img{
+    bottom: -1px;
+}
